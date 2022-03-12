@@ -42,8 +42,8 @@
       </template>
       <script>
         function visitPage(){
-          amount = document.getElementById('c-total').value;
-          window.location='https://sisipay.herokuapp.com/checkouts/PzLOX2DFd-zKNBVb8AqGeg/?' + amount;
+          amount = document.getElementById('c-total').textContent;
+          window.location='https://sisipay.herokuapp.com/checkouts/PzLOX2DFd-zKNBVb8AqGeg/?amount=' + amount;
         }
     </script>
   </body>

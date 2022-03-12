@@ -41,7 +41,7 @@ var cart = {
         item.querySelector(".p-img").src = cart.iURL + p.img;
         item.querySelector(".p-name").textContent = p.name;
         item.querySelector(".p-desc").textContent = p.desc;
-        item.querySelector(".p-price").textContent = "KSh" + p.price.toFixed(2);
+        item.querySelector(".p-price").textContent = p.price.toFixed(2);
         item.querySelector(".p-add").onclick = () => { cart.add(id); };
         cart.hPdt.appendChild(item);
       }
@@ -92,7 +92,7 @@ var cart = {
         item = document.createElement("div");
         item.className = "c-total";
         item.id = "c-total";
-        item.innerHTML ="TOTAL: KSh" + total;
+        item.innerHTML = total;
         cart.hItems.appendChild(item);
   
         // (D3-4) EMPTY & CHECKOUT
@@ -122,7 +122,7 @@ var cart = {
         var total = 0;
         for (let id in cart.items) {
           total += cart.items[id] * products[id].price;
-          document.getElementById("c-total").innerHTML ="TOTAL: $" + total;
+          document.getElementById("c-total").innerHTML = total;
         }
       }
     },
