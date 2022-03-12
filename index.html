@@ -38,7 +38,13 @@
     </template>
     <template id="template-cart-checkout">
       <button class="c-empty cart" onclick="cart.nuke()">Empty</button>
-      <button class="c-checkout cart" onclick="location.href = 'https://sisipay.herokuapp.com/'" target="_blank">Checkout</button>
-    </template>
+      <button class="c-checkout cart" onclick="visitPage();" target="_blank">Checkout</button>
+      </template>
+      <script>
+        function visitPage(){
+          amount = document.getElementById('c-total').value;
+          window.location='https://sisipay.herokuapp.com/checkouts/PzLOX2DFd-zKNBVb8AqGeg/?' + amount;
+        }
+    </script>
   </body>
 </html>

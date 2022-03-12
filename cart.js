@@ -137,16 +137,5 @@ var cart = {
     // (H) CHECKOUT
    
   
-      /*
-      var data = new FormData();
-      data.append("cart", JSON.stringify(cart.items));
-      data.append("products", JSON.stringify(products));
-  
-      fetch("SERVER-SCRIPT", { method:"POST", body:data })
-      .then(res=>res.text()).then((res) => {
-        console.log(res);
-      })
-      .catch((err) => { console.error(err); });
-      */
   };
   window.addEventListener("DOMContentLoaded", cart.init);

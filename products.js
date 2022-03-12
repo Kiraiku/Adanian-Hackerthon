@@ -2,19 +2,19 @@
 var products = {
     123: {
       name : "Greatlap l9",
-      desc : "Greatest properly off ham exercise all.",
-      img : "dummy-pdt-b.jpg",
+      desc : "Greatest of all tec.",
+      img : "tv.jpg",
       price : 22333
     },
     124: {
       name : "Music System",
-      desc : "Unsatiable its possession nor off.",
+      desc : "Quality Sound.",
       img : "phone.jpg",
       price : 7001
     },
     125: {
       name : "iPong Max",
-      desc : "All difficulty unreserved the solicitude.",
+      desc : "Portable.",
       img :   "phone2.jpg",
       price : 6750
     },
